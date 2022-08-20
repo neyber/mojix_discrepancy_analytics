@@ -102,7 +102,7 @@ if len(uploaded_files) == 2:
 
     # Inventory Workflow Only
     kpi_iwf = round(df_merged.loc[df_merged['_merge'] == 'right_only']['Retail_Product_SKU'].count()*100/df_merged['_merge'].count(), 1)
-    col2.metric('Inventory Workflow Only', str(kpi_iwf)+'%')
+    col2.metric('Inv. Workflow Only', str(kpi_iwf)+'%')
 
     # Both
     kpi_both = round(df_merged.loc[df_merged['_merge'] == 'both']['Retail_Product_SKU'].count()*100/df_merged['_merge'].count(), 1)
